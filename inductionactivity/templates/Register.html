@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial scale =1.0"> 
+    <title>Register Form</title>
+    <link rel="stylesheet" href="/static/Register.css">
+    <script>
+        src="{{url_for('static',filename='valid-reg.js')}}"
+    </script>
+</head>    
+<body>
+    <div class="container">
+        <form class="form-reg" method="post" name="form-reg" action="">
+            <h2>SIGN UP</h2>
+            <input type = "text" name="fname" class="box" autocomplete="off" placeholder="Enter First Name here">
+            <div id="fname_error" hidden>Please fill up your Name</div>
+            <input type = "text" name="lname" class="box" autocomplete="off" placeholder="Enter Last Name here">
+            <div id="lname_error" hidden>Please fill up your Surname</div>
+            <input type = "text" name="dob" class="box" autocomplete="off" placeholder="Enter Date of Birth here">
+            <div id="dob_error" hidden>Please fill up your Date of Birth</div>
+            <input type = "email" name="email" class="box" autocomplete="off" placeholder="Enter Email here">
+            <div id="email_error" hidden>Please fill up your Email</div>
+            <input type = "password" name="password" class="box" placeholder="Enter Password here">
+            <div id="pass_error" hidden>Please fill up your Password</div>
+            <div name="msg">{{ msg }}</div>
+            <input type ="submit" value="SIGN UP" id="submit">
+            <a href="Login.html">Already Registered? Login Here</a>
+        </form>
+        <div class="side">
+            <image src="/static/img.jpg" alt="Loading....">
+        </div>    
+    </div>
+
+</body>
+</html>

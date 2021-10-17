@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial scale =1.0"> 
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/static/Login.css">
+</head>    
+<body>
+    <div class="container">
+        <form class="form" action="" method="post" name="form">
+            <h2>SIGN IN</h2>
+            <input type = "email" name="email" class="box" autocomplete="off" placeholder="Enter Email here">
+            <div id="email_error" hidden>Please fill up your Email</div>
+            <input type = "password" name="password" class="box" placeholder="Enter Password here">
+            <div id="pass_error" hidden>Please fill up your Password</div>
+            <div name="msg">{{ msg }}</div>
+            <input type ="submit" value="SIGN IN" id="submit">
+        </form>
+        <div class="side">
+            <img src="/static/img.jpg" alt="Loading....">
+        </div>    
+    </div>
+</body>
+</html>

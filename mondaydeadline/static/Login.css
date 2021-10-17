@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+}
+/* Login - Container */
+.container{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    /*border: 1px solid black;*/
+    margin: auto;
+    margin-top: 7.5%;
+    box-shadow: 15px 15px 20px black;
+}
+
+/* Login form */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.form h2{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px;
+}
+
+.box{
+    padding: 0.5rem;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+}
+
+#submit{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.form a{
+    text-decoration: none;
+    color:blue;
+    margin-top: 20px;
+}
+
+.form a:hover{
+    color: black;
+}
+
+/* Right Side */
+.side{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: red;
+}
+
+.side img{
+    width: 400px;
+    height: 300px;
+}
+
+.form #email_error,
+.form #pass_error{
+	margin-top: 5px;
+	width: 245px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
